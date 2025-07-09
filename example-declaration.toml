@@ -1,0 +1,48 @@
+# Dimension of each ideal‐vector
+ideal_dimension = 3
+
+# Congress members
+[[congress_members]]
+id = "member1"
+ideal = [0.1, 0.2, 0.3]
+bias = 0.5
+swing = 0.3
+
+[[congress_members]]
+id = "member2"
+ideal = [0.4, 0.5, 0.6]
+bias = -0.2
+swing = 0.1
+
+[[congress_members]]
+id = "member3"
+ideal = [1.0, 0.0, -1.0]
+bias = 0.0
+swing = 0.2
+
+# Influence edges
+[[edges]]
+from = "member1"
+to = "member2"
+weight = 0.5
+
+[[edges]]
+from = "member2"
+to = "member3"
+weight = 0.8
+
+[[edges]]
+from = "member3"
+to = "member1"
+weight = 0.3
+
+# Parties
+[[parties]]
+id = "partyA"
+discipline = 0.8
+members = ["member1", "member2"]
+
+[[parties]]
+id = "partyB"
+discipline = 0.6
+members = ["member3"]

@@ -1,0 +1,16 @@
+[package]
+name = "libpolisim"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "libpolisim"
+path = "src/lib.rs"
+crate-type = ["rlib"]
+
+[dependencies]
+nalgebra = "0.33.2"
+petgraph = "0.8.2"
+rand = "0.9.1"
+serde = { version = "1.0.129", features = ["derive"] }
+toml = "0.9.0"
